@@ -26,7 +26,8 @@ def pass_folder_type(filename):
     else:
         return True
     
-
+    
+# replacing slashes with dashes for  downloaded folder naming 
 def url_to_name(download_url):
     return download_url.replace('/' , '-')
      
