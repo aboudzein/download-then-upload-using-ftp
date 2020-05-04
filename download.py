@@ -6,6 +6,7 @@ import re
 from pathlib import Path
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
+# The File downloaded from digital ocean is xml 
 ## Convert XML to JSON using any online converter 
 ## Save the Converted Json to /digitalocean_space_data
 ## This Script can be used also with s3 bucket xml .
