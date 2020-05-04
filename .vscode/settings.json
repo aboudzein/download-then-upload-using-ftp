@@ -1,0 +1,5 @@
+{
+    "python.envFile":"${workspaceFolder}/.env",
+    "code-runner.executorMap.python": "python3 -u",
+    "python.pythonPath": "env/bin/python"
+}
