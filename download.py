@@ -26,14 +26,19 @@ def pass_folder_type(filename):
     else:
         return True
     
+
+def url_to_name(download_url):
+    return download_url.replace('/' , '-')
+     
     
 
 def download_file(folder , local_location):
     path = local_location[10:]
     url = 'https://example.fra1.digitaloceanspaces.com/' +  path
     download_url = url + folder
+    video_folder_name = url_to_name(path) + folder
     try:
-        wget.download(download_url , local_location)
+        wget.download(download_url , local_location + video_folder_name  )
     except: 
         print('File Failed to download')
         
