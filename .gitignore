@@ -2,3 +2,8 @@ lib
 bin
 include
 digitalocean_space_data
+videos
+folders
+.ini
+.env
+app.log
